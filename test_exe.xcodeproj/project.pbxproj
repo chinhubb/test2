@@ -16,6 +16,8 @@
 		E98CC96525D42E6A00B9E6B7 /* test_exeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98CC96425D42E6A00B9E6B7 /* test_exeTests.swift */; };
 		E98CC97025D42E6A00B9E6B7 /* test_exeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98CC96F25D42E6A00B9E6B7 /* test_exeUITests.swift */; };
 		E98CC98525D42F2D00B9E6B7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E98CC98425D42F2D00B9E6B7 /* Alamofire */; };
+		E98CC98F25D4306D00B9E6B7 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98CC98E25D4306D00B9E6B7 /* Navigator.swift */; };
+		E98CC99725D430C900B9E6B7 /* ClickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98CC99625D430C900B9E6B7 /* ClickViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		E98CC96B25D42E6A00B9E6B7 /* test_exeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test_exeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98CC96F25D42E6A00B9E6B7 /* test_exeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_exeUITests.swift; sourceTree = "<group>"; };
 		E98CC97125D42E6A00B9E6B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E98CC98E25D4306D00B9E6B7 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		E98CC99625D430C900B9E6B7 /* ClickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				E98CC95125D42E6800B9E6B7 /* ViewController.swift */,
+				E98CC99625D430C900B9E6B7 /* ClickViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 		E98CC98D25D4300500B9E6B7 /* Navigator */ = {
 			isa = PBXGroup;
 			children = (
+				E98CC98E25D4306D00B9E6B7 /* Navigator.swift */,
 			);
 			path = Navigator;
 			sourceTree = "<group>";
@@ -283,6 +289,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E98CC95225D42E6800B9E6B7 /* ViewController.swift in Sources */,
+				E98CC99725D430C900B9E6B7 /* ClickViewController.swift in Sources */,
+				E98CC98F25D4306D00B9E6B7 /* Navigator.swift in Sources */,
 				E98CC94E25D42E6800B9E6B7 /* AppDelegate.swift in Sources */,
 				E98CC95025D42E6800B9E6B7 /* SceneDelegate.swift in Sources */,
 			);

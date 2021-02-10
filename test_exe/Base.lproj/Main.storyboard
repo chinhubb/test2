@@ -52,6 +52,21 @@
             </objects>
             <point key="canvasLocation" x="129" y="94"/>
         </scene>
+        <!--Click View Controller-->
+        <scene sceneID="ilG-sf-7Lq">
+            <objects>
+                <viewController storyboardIdentifier="ClickViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vof-2U-Coe" customClass="ClickViewController" customModule="test_exe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h8Y-cT-MWX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ccT-en-Rxh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xMy-vz-HM4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1084" y="94"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
