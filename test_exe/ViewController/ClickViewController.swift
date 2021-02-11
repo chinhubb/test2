@@ -18,7 +18,8 @@ class ClickViewController: UIViewController {
     func initcomponent(){
         let newBtn = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(anotherMethod))
            self.navigationItem.leftItemsSupplementBackButton = true
-           self.navigationItem.leftBarButtonItem = newBtn//self.navigationItem.leftBarButtonItems = [newBtn,anotherBtn]
+           self.navigationItem.leftBarButtonItem = newBtn
+        //self.navigationItem.leftBarButtonItems = [newBtn,anotherBtn]
     }
     
     @objc func anotherMethod(){
@@ -31,6 +32,4 @@ class ClickViewController: UIViewController {
            let url = URL(string: "https://linecorp.com/th/")
            webView.load(URLRequest(url: url!))
     }
-    
-    
 }
