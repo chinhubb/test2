@@ -16,20 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8O-Jj-GK3">
-                                <rect key="frame" x="8" y="437.5" width="398" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8O-Jj-GK3">
+                                <rect key="frame" x="8" y="44" width="398" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVN-u3-UUL">
-                                <rect key="frame" x="184" y="476.5" width="46" height="50"/>
+                                <rect key="frame" x="8" y="73" width="398" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4GN-1e-sxL"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="webview"/>
                                 <connections>
-                                    <action selector="click_action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qd2-tf-dXa"/>
+                                    <action selector="click_web:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r9O-VX-m4f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4D-he-3Oc">
+                                <rect key="frame" x="8" y="131" width="398" height="30"/>
+                                <state key="normal" title="camera"/>
+                                <connections>
+                                    <action selector="click_list:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IoZ-vi-lfD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -37,10 +44,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R8O-Jj-GK3" secondAttribute="trailing" constant="8" id="FdC-Ai-Izf"/>
-                            <constraint firstItem="hVN-u3-UUL" firstAttribute="centerX" secondItem="R8O-Jj-GK3" secondAttribute="centerX" id="GhH-GB-MiQ"/>
+                            <constraint firstItem="S4D-he-3Oc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="PGr-4Z-0TY"/>
                             <constraint firstItem="R8O-Jj-GK3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Tky-Ws-Chh"/>
-                            <constraint firstItem="R8O-Jj-GK3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="abJ-iU-zLZ"/>
-                            <constraint firstItem="hVN-u3-UUL" firstAttribute="top" secondItem="R8O-Jj-GK3" secondAttribute="bottom" constant="18" id="wsw-Vr-Wej"/>
+                            <constraint firstItem="S4D-he-3Oc" firstAttribute="top" secondItem="hVN-u3-UUL" secondAttribute="bottom" constant="8" id="ZJ7-cY-iTd"/>
+                            <constraint firstItem="hVN-u3-UUL" firstAttribute="top" secondItem="R8O-Jj-GK3" secondAttribute="bottom" constant="8" id="ayi-ov-q58"/>
+                            <constraint firstItem="R8O-Jj-GK3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bfI-cL-XB6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S4D-he-3Oc" secondAttribute="trailing" constant="8" id="fOH-El-rBu"/>
+                            <constraint firstItem="hVN-u3-UUL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="qCM-AG-Rqk"/>
+                            <constraint firstItem="R8O-Jj-GK3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rYc-AW-bWB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hVN-u3-UUL" secondAttribute="trailing" constant="8" id="uKb-Jx-bku"/>
                         </constraints>
                     </view>
                     <connections>
@@ -66,6 +78,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xMy-vz-HM4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1084" y="94"/>
+        </scene>
+        <!--Almofire List View Controller-->
+        <scene sceneID="s8X-g2-yNo">
+            <objects>
+                <viewController storyboardIdentifier="AlmofireListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Mp1-im-blJ" customClass="AlmofireListViewController" customModule="test_exe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aph-EQ-3OY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Almofire List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="of7-75-AV3">
+                                <rect key="frame" x="8" y="52" width="398" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ayt-Jn-kEj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="of7-75-AV3" firstAttribute="leading" secondItem="Ayt-Jn-kEj" secondAttribute="leading" constant="8" id="M5A-9c-Cjz"/>
+                            <constraint firstItem="Ayt-Jn-kEj" firstAttribute="trailing" secondItem="of7-75-AV3" secondAttribute="trailing" constant="8" id="PDa-ds-qkz"/>
+                            <constraint firstItem="of7-75-AV3" firstAttribute="top" secondItem="Ayt-Jn-kEj" secondAttribute="top" constant="8" id="d5M-X9-EAx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gIi-cw-diQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2042" y="94"/>
         </scene>
     </scenes>
     <resources>

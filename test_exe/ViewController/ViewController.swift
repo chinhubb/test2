@@ -20,9 +20,11 @@ class ViewController: UIViewController {
         testLabel.text = "click"
     }
 
-    @IBAction func click_action(_ sender: Any) {
+    @IBAction func click_web(_ sender: Any) {
         Navigator.share.toClick(self)
-
+    }
+    @IBAction func click_list(_ sender: Any) {
+        Navigator.share.toAlmofire(self)
     }
     
 }

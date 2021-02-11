@@ -19,7 +19,6 @@ class ClickViewController: UIViewController {
         let newBtn = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(anotherMethod))
            self.navigationItem.leftItemsSupplementBackButton = true
            self.navigationItem.leftBarButtonItem = newBtn
-        //self.navigationItem.leftBarButtonItems = [newBtn,anotherBtn]
     }
     
     @objc func anotherMethod(){
