@@ -18,7 +18,7 @@ class AlamofireTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    func setCell() {
-        nameLabel.textColor = UIColor.blue
+    func setCell(_ data : Country?){
+        nameLabel.text = data?.name
     }
 }

@@ -8,13 +8,17 @@
 import Foundation
 import UIKit
 
-class AlmofireListViewController: UIViewController {
+class AlmofireListViewController: BaseViewController {
     static let identifier = "AlmofireListViewController"
+
+    var countries = [Country]()
+
     @IBOutlet var tableView: UITableView!
 
     override func viewDidLoad() {
         initTableView()
         initcomponent()
+        feed()
     }
 
     func initTableView() {
@@ -32,16 +36,32 @@ class AlmofireListViewController: UIViewController {
     @objc func goBack() {
         dismiss(animated: true, completion: nil)
     }
+
+    func feed() {
+//        https://jsonplaceholder.typicode.com/posts/1
+//        https://restcountries.eu/rest/v2/
+        let service = Service(baseUrl: "https://restcountries.eu/rest/v2/")
+        service.getAllCountryNameFrom(endPoint: "all")
+        service.completionHandler { [weak self] countries, status, _ in
+            if status {
+                guard let self = self else { return }
+                guard let _countries = countries else { return }
+                self.countries = _countries
+                self.tableView.reloadData()
+            }
+        }
+    }
 }
 
 extension AlmofireListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return countries.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: AlamofireTableViewCell.identifier, for: indexPath) as? AlamofireTableViewCell else { return UITableViewCell() }
-        cell.setCell()
+        let country = countries[indexPath.row]
+        cell.setCell(country)
         return cell
     }
 
