@@ -19,6 +19,8 @@
 		E98CC98F25D4306D00B9E6B7 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98CC98E25D4306D00B9E6B7 /* Navigator.swift */; };
 		E98CC99725D430C900B9E6B7 /* ClickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98CC99625D430C900B9E6B7 /* ClickViewController.swift */; };
 		E9A7272825D50B9E004B8E96 /* AlmofireListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7272725D50B9E004B8E96 /* AlmofireListViewController.swift */; };
+		E9A7275F25D6CB64004B8E96 /* AlamofireTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7275D25D6CB64004B8E96 /* AlamofireTableViewCell.swift */; };
+		E9A7276025D6CB64004B8E96 /* AlamofireTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9A7275E25D6CB64004B8E96 /* AlamofireTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		E98CC98E25D4306D00B9E6B7 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		E98CC99625D430C900B9E6B7 /* ClickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickViewController.swift; sourceTree = "<group>"; };
 		E9A7272725D50B9E004B8E96 /* AlmofireListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlmofireListViewController.swift; sourceTree = "<group>"; };
+		E9A7275D25D6CB64004B8E96 /* AlamofireTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireTableViewCell.swift; sourceTree = "<group>"; };
+		E9A7275E25D6CB64004B8E96 /* AlamofireTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlamofireTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 		E98CC94C25D42E6800B9E6B7 /* test_exe */ = {
 			isa = PBXGroup;
 			children = (
+				E9A7275925D6CACF004B8E96 /* TableView */,
 				E98CC98D25D4300500B9E6B7 /* Navigator */,
 				E98CC98925D42FEA00B9E6B7 /* ViewController */,
 				E98CC94D25D42E6800B9E6B7 /* AppDelegate.swift */,
@@ -153,6 +158,23 @@
 				E98CC98E25D4306D00B9E6B7 /* Navigator.swift */,
 			);
 			path = Navigator;
+			sourceTree = "<group>";
+		};
+		E9A7275925D6CACF004B8E96 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				E9A7276425D6CB98004B8E96 /* UI */,
+				E9A7275D25D6CB64004B8E96 /* AlamofireTableViewCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		E9A7276425D6CB98004B8E96 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E9A7275E25D6CB64004B8E96 /* AlamofireTableViewCell.xib */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +288,7 @@
 			files = (
 				E98CC95A25D42E6A00B9E6B7 /* LaunchScreen.storyboard in Resources */,
 				E98CC95725D42E6A00B9E6B7 /* Assets.xcassets in Resources */,
+				E9A7276025D6CB64004B8E96 /* AlamofireTableViewCell.xib in Resources */,
 				E98CC95525D42E6800B9E6B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +317,7 @@
 				E9A7272825D50B9E004B8E96 /* AlmofireListViewController.swift in Sources */,
 				E98CC95225D42E6800B9E6B7 /* ViewController.swift in Sources */,
 				E98CC99725D430C900B9E6B7 /* ClickViewController.swift in Sources */,
+				E9A7275F25D6CB64004B8E96 /* AlamofireTableViewCell.swift in Sources */,
 				E98CC98F25D4306D00B9E6B7 /* Navigator.swift in Sources */,
 				E98CC94E25D42E6800B9E6B7 /* AppDelegate.swift in Sources */,
 				E98CC95025D42E6800B9E6B7 /* SceneDelegate.swift in Sources */,
