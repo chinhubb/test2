@@ -11,10 +11,12 @@ import UIKit
 class AlmofireListViewController: BaseViewController {
     static let identifier = "AlmofireListViewController"
 
-    var countries = [Country]()
-
+   
     @IBOutlet var tableView: UITableView!
 
+    var countries = [Country]()
+
+    
     override func viewDidLoad() {
         initTableView()
         initcomponent()
@@ -40,8 +42,8 @@ class AlmofireListViewController: BaseViewController {
     func feed() {
 //        https://jsonplaceholder.typicode.com/posts/1
 //        https://restcountries.eu/rest/v2/
-        let service = Service(baseUrl: "https://restcountries.eu/rest/v2/")
-        service.getAllCountryNameFrom(endPoint: "all")
+        let service = Service(baseUrl: "https://restcountries.eu/rest/")
+        service.getAllCountryNameFrom(endPoint: "v2")
         service.completionHandler { [weak self] countries, status, _ in
             if status {
                 guard let self = self else { return }

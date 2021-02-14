@@ -38,4 +38,14 @@ class Navigator {
             viewController.present(navigation, animated: true, completion: nil)
         }
     }
+    
+    func toLogin(_ viewController: UIViewController) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(withIdentifier: LoginViewController.identifier) as? LoginViewController else { return }
+        
+        let navigation = UINavigationController(rootViewController: vc)
+        navigation.modalPresentationStyle = .overFullScreen
+        viewController.present(navigation, animated: true, completion: nil)
+        
+    }
 }

@@ -17,7 +17,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        testLabel.text = "click"
+        initComnponent()
+        
+    }
+    
+    func initComnponent(){
+        testLabel.text = "Choose"
     }
 
     @IBAction func click_web(_ sender: Any) {
@@ -25,6 +30,9 @@ class ViewController: UIViewController {
     }
     @IBAction func click_list(_ sender: Any) {
         Navigator.share.toAlmofire(self)
+    }
+    @IBAction func click_login(_ sender: Any) {
+        Navigator.share.toLogin(self)
     }
     
 }

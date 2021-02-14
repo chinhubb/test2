@@ -24,6 +24,10 @@
 		E9A7276E25D6DC9B004B8E96 /* TestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7276D25D6DC9B004B8E96 /* TestResponse.swift */; };
 		E9A7279025D6EAB1004B8E96 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7278F25D6EAB1004B8E96 /* BaseViewController.swift */; };
 		E9A7279B25D6EBF1004B8E96 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7279A25D6EBF1004B8E96 /* Service.swift */; };
+		E9A727D125D93FAC004B8E96 /* TryCatchTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A727C225D93F9E004B8E96 /* TryCatchTest.swift */; };
+		E9A727FB25D957B6004B8E96 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A727FA25D957B6004B8E96 /* LoginViewController.swift */; };
+		E9A7280925D95A4A004B8E96 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7280825D95A4A004B8E96 /* UserModel.swift */; };
+		E9A7280F25D95C9B004B8E96 /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7280E25D95C9B004B8E96 /* ValidationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,10 @@
 		E9A7276D25D6DC9B004B8E96 /* TestResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResponse.swift; sourceTree = "<group>"; };
 		E9A7278F25D6EAB1004B8E96 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E9A7279A25D6EBF1004B8E96 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		E9A727C225D93F9E004B8E96 /* TryCatchTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryCatchTest.swift; sourceTree = "<group>"; };
+		E9A727FA25D957B6004B8E96 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E9A7280825D95A4A004B8E96 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		E9A7280E25D95C9B004B8E96 /* ValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,7 @@
 				E98CC94C25D42E6800B9E6B7 /* test_exe */,
 				E98CC96325D42E6A00B9E6B7 /* test_exeTests */,
 				E98CC96E25D42E6A00B9E6B7 /* test_exeUITests */,
+				E9A7280D25D95AD4004B8E96 /* Unit Test */,
 				E98CC94B25D42E6800B9E6B7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,6 +133,7 @@
 				E98CC94D25D42E6800B9E6B7 /* AppDelegate.swift */,
 				E98CC94F25D42E6800B9E6B7 /* SceneDelegate.swift */,
 				E9A7279A25D6EBF1004B8E96 /* Service.swift */,
+				E9A7280E25D95C9B004B8E96 /* ValidationService.swift */,
 				E98CC95325D42E6800B9E6B7 /* Main.storyboard */,
 				E98CC95625D42E6A00B9E6B7 /* Assets.xcassets */,
 				E98CC95825D42E6A00B9E6B7 /* LaunchScreen.storyboard */,
@@ -157,6 +167,7 @@
 				E98CC95125D42E6800B9E6B7 /* ViewController.swift */,
 				E98CC99625D430C900B9E6B7 /* ClickViewController.swift */,
 				E9A7272725D50B9E004B8E96 /* AlmofireListViewController.swift */,
+				E9A727FA25D957B6004B8E96 /* LoginViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -189,6 +200,7 @@
 		E9A7276B25D6DC76004B8E96 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E9A7280725D95A39004B8E96 /* Request */,
 				E9A7276C25D6DC7C004B8E96 /* Response */,
 			);
 			path = Model;
@@ -200,6 +212,22 @@
 				E9A7276D25D6DC9B004B8E96 /* TestResponse.swift */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		E9A7280725D95A39004B8E96 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				E9A7280825D95A4A004B8E96 /* UserModel.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		E9A7280D25D95AD4004B8E96 /* Unit Test */ = {
+			isa = PBXGroup;
+			children = (
+				E9A727C225D93F9E004B8E96 /* TryCatchTest.swift */,
+			);
+			path = "Unit Test";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,13 +367,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9A727FB25D957B6004B8E96 /* LoginViewController.swift in Sources */,
 				E9A7272825D50B9E004B8E96 /* AlmofireListViewController.swift in Sources */,
 				E98CC95225D42E6800B9E6B7 /* ViewController.swift in Sources */,
 				E98CC99725D430C900B9E6B7 /* ClickViewController.swift in Sources */,
 				E9A7275F25D6CB64004B8E96 /* AlamofireTableViewCell.swift in Sources */,
+				E9A7280925D95A4A004B8E96 /* UserModel.swift in Sources */,
 				E9A7279025D6EAB1004B8E96 /* BaseViewController.swift in Sources */,
 				E9A7276E25D6DC9B004B8E96 /* TestResponse.swift in Sources */,
 				E98CC98F25D4306D00B9E6B7 /* Navigator.swift in Sources */,
+				E9A7280F25D95C9B004B8E96 /* ValidationService.swift in Sources */,
 				E9A7279B25D6EBF1004B8E96 /* Service.swift in Sources */,
 				E98CC94E25D42E6800B9E6B7 /* AppDelegate.swift in Sources */,
 				E98CC95025D42E6800B9E6B7 /* SceneDelegate.swift in Sources */,
@@ -357,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E98CC96525D42E6A00B9E6B7 /* test_exeTests.swift in Sources */,
+				E9A727D125D93FAC004B8E96 /* TryCatchTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

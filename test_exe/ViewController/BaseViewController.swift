@@ -18,4 +18,5 @@ class BaseViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "ตกลง", style: .default, handler: complete))
         present(alert, animated: true, completion: nil)
     }
+    
 }
