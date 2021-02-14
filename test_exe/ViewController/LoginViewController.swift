@@ -49,8 +49,8 @@ class LoginViewController: BaseViewController {
             if let user = dummyDB.first(where: { user in
                 user.username == username && user.password == pass
             }) {
-//                showAlert("You successfully logged in as \(user.username)")
-                Navigator.share.toAlmofire(self)
+                showAlert("You successfully logged in as \(user.username)")
+//                Navigator.share.toAlmofire(self)
             } else {
                 throw ValidationError.invalidCredentials
             }
