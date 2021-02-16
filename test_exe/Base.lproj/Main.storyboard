@@ -56,6 +56,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="counterLabel"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MGY-WT-gzH" secondAttribute="trailing" constant="8" id="ACG-kX-Vkv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R8O-Jj-GK3" secondAttribute="trailing" constant="8" id="FdC-Ai-Izf"/>

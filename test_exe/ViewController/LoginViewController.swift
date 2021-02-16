@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class LoginViewController: BaseViewController {
+class LoginViewController: BaseViewController, UITextFieldDelegate {
     static let identifier = "LoginViewController"
 
     @IBOutlet var usernameTextField: UITextField!
@@ -29,6 +29,8 @@ class LoginViewController: BaseViewController {
     
     override func viewDidLoad() {
         initcomponent()
+        usernameTextField.delegate = self
+        passwordTextField.delegate = self
     }
     
     func initcomponent() {
