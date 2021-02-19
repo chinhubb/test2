@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E948231525E0044B00646FE8 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = E948231425E0044B00646FE8 /* ObjectMapper */; };
 		E98CC94E25D42E6800B9E6B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98CC94D25D42E6800B9E6B7 /* AppDelegate.swift */; };
 		E98CC95025D42E6800B9E6B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98CC94F25D42E6800B9E6B7 /* SceneDelegate.swift */; };
 		E98CC95225D42E6800B9E6B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98CC95125D42E6800B9E6B7 /* ViewController.swift */; };
@@ -83,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E948231525E0044B00646FE8 /* ObjectMapper in Frameworks */,
 				E98CC98525D42F2D00B9E6B7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +245,7 @@
 			name = test_exe;
 			packageProductDependencies = (
 				E98CC98425D42F2D00B9E6B7 /* Alamofire */,
+				E948231425E0044B00646FE8 /* ObjectMapper */,
 			);
 			productName = test_exe;
 			productReference = E98CC94A25D42E6800B9E6B7 /* test_exe.app */;
@@ -317,6 +320,7 @@
 			mainGroup = E98CC94125D42E6800B9E6B7;
 			packageReferences = (
 				E98CC98325D42F2D00B9E6B7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				E948231325E0044B00646FE8 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
 			);
 			productRefGroup = E98CC94B25D42E6800B9E6B7 /* Products */;
 			projectDirPath = "";
@@ -712,6 +716,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E948231325E0044B00646FE8 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
 		E98CC98325D42F2D00B9E6B7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -723,6 +735,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E948231425E0044B00646FE8 /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E948231325E0044B00646FE8 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
 		E98CC98425D42F2D00B9E6B7 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E98CC98325D42F2D00B9E6B7 /* XCRemoteSwiftPackageReference "Alamofire" */;
